@@ -1,0 +1,24 @@
+/** Базовые анимации: */
+@import 'keyframes';
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.page {
+    position: relative;
+    flex: 1 1 auto;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    @media (min-width: $ds) {
+        width: calc(1170px + 40px);
+    }
+}
+
