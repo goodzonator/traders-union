@@ -309,6 +309,9 @@
         display: flex;
         flex-grow: 1;
         max-width: calc(50% - 36px);
+        &:has(.choices.is-open) .converter__form-input {
+            border-color: $blue;
+        }
     }
 
     &__swap, &__form-input, &__form-select {
@@ -323,6 +326,9 @@
         font-size: 1rem;
         border-radius: .25rem 0 0 .25rem;
         border-right: none;
+        &:focus + .choices .choices__inner {
+            border-color: $blue;
+        }
     }
 
     &__form-select {
@@ -335,12 +341,16 @@
         border-radius: 0 .25rem .25rem 0;
     }
     .choices {
+        &.is-open .choices__inner {
+            border-color: $blue;
+        }
         &[data-type*=select-one] {
             &:after {
                 display: none;
             }
             .choices__inner {
                 padding-bottom: 0;
+                transition: border-color .3s;
             }
         }
         &__inner {
