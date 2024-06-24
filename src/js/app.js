@@ -6,7 +6,6 @@ import './mobile-menu.js';
 import './search.js';
 import './language.js';
 import './resizeTransfer.js';
-import './converter.js';
 
 /* support webp */
 import BaseHelpers from "./helpers/BaseHelpers.js";
