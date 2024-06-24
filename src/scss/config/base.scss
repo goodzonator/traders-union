@@ -83,6 +83,9 @@
         &:not(:last-child) {
             border-bottom: 1px solid #E1E1E1
         }
+        &:last-child {
+            border-radius: 0 0 rem(10) rem(10);
+        }
     }
     &__row-header {
         font-weight: 600;
