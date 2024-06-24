@@ -27,7 +27,7 @@
     @media (max-width: 480px) {
         position: relative;
         white-space: nowrap;
-        width: calc(100% - 10.3125);
+        width: calc(100% - 10.3125rem);
         justify-content: flex-end;
         line-height: 17px;
         &:before {
