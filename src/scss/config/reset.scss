@@ -24,6 +24,7 @@ aside {
 }
 
 html {
+    font-size: 16px;
     scroll-behavior: smooth;
 
     &.lock {
@@ -38,54 +39,22 @@ body {
     font-size: $font-size;
     font-weight: $font-weight;
     line-height: $line-height;
-    color: #000;
-    background-color: #fff;
+    color: $dark;
+    background-color: $white;
     text-rendering: optimizelegibility;
     text-size-adjust: 100%;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    opacity: 0;
-    transition: opacity .3s;
 
-    &.load {
-        opacity: 1;
-    }
-
-    &.overflow-hidden {
+    &:has(.mobile-menu-wrap.active) {
         overflow: hidden;
-    }
-
-    &.user-is-authorized {
-        .is-no-authorized {
-            display: none;
-        }
-    }
-
-    &.user-is-no-authorized {
-        .is-authorized {
-            display: none;
-        }
-        .user-menu__list {
-            margin-bottom: 0;
-            padding-bottom: 0;
-            &:before {
-                display: none;
-            }
-        }
-    }
-    @media (min-width: $ds) {
-        &.overflow-hidden {
-            overflow: hidden;
-            .header, .wrapper {
-                padding-right: 8px;
-            }
-        }
     }
 }
 
 input,
 button,
-textarea {
+textarea,
+select {
     color: inherit;
     font-family: inherit;
     font-size: inherit;
@@ -118,7 +87,7 @@ button {
 }
 
 a {
-    color: #000;
+    color: $gray-500;
     text-decoration: none;
     transition: all .3s;
 
@@ -132,6 +101,7 @@ a {
     }
 
     &:hover {
+        color: $blue;
         text-decoration: none;
     }
 }

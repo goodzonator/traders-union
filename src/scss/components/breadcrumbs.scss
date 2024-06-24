@@ -1,0 +1,55 @@
+.breadcrumbs {
+    display: flex;
+    gap: rem(18);
+    font-size: .75rem;
+    line-height: 1rem;
+    &-link-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: rem(10);
+    }
+    li {
+        position: relative;
+        &:not(:last-child):before {
+            content: '';
+            position: absolute;
+            left: 100%;
+            margin-left: rem(6);
+            top: 50%;
+            transform: translateY(-50%);
+            width: rem(6);
+            height: rem(6);
+            background: url("../images/icons/icons.svg#chevron-right-small") no-repeat;
+            background-size: contain;
+        }
+    }
+    @media (max-width: 480px) {
+        position: relative;
+        white-space: nowrap;
+        width: calc(100% - 10.3125);
+        justify-content: flex-end;
+        line-height: 17px;
+        &:before {
+            content: '';
+            position: absolute;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: rem(40);
+            background: linear-gradient(to left, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 0.75) 50%, #FFF 100%);
+        }
+        &-link-wrap {
+            gap: rem(22);
+            margin-top: 1rem;
+            margin-left: rem(-20);
+            overflow: hidden;
+            .text-small {
+                //flex-grow: 1;
+                flex-shrink: 0;
+                white-space: nowrap;
+            }
+        }
+    }
+}

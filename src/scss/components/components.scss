@@ -1,0 +1,20 @@
+.ad {
+    padding: rem(3) rem(6);
+    font-size: rem(11);
+    line-height: .75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $white;
+    background-color: rgba(143, 135, 131, 0.48);
+    border-radius: rem(3);
+}
+
+.tabs-content {
+    display: none; /* Скрываем контент по умолчанию */
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    &.active {
+        display: block; /* Отображаем контент активного таба */
+        opacity: 1;
+    }
+}

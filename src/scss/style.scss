@@ -19,7 +19,8 @@
 /**
 * Библиотеки
 */
-//@import 'libs/swiper';
+@import 'libs/swiper';
+@import 'libs/choices';
 
 /**
 * Общие параметры, шаблоны(заготовки) и вспомогательные классы
@@ -41,4 +42,4 @@
 /**
 * Подключение стилей отдельных страниц
 */
-//@import "pages/main-page";
+@import "pages/main-page";

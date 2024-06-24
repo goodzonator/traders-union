@@ -3,7 +3,7 @@
   * {
     scrollbar-width: rem(8);
     //scrollbar-color: var(--primary-color) #d6d6d6;
-    scrollbar-color: #000;
+    scrollbar-color: $dark;
 
     // Chrome, Edge, and Safari
     &::-webkit-scrollbar {
@@ -19,7 +19,7 @@
     &::-webkit-scrollbar-thumb {
       border-radius: rem(8);
       border: 0 none #fff;
-      background-color: #000;
+      background-color: $dark;
 
       &:hover {
         //background-color: var(--primary-hover-color);

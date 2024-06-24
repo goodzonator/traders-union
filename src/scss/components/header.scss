@@ -1,0 +1,200 @@
+.header-top {
+    background: $gray-100;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: rem(30);
+        padding: 1rem 0;
+    }
+
+    &__title, &__buttons {
+        width: calc(50% - 4.0625rem);
+    }
+
+    &__logo {
+        flex-shrink: 0;
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: flex-end;
+        gap: rem(6);
+    }
+}
+
+.header-bottom {
+    border-bottom: 1px solid $gray-300;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: rem(5) 0 rem(4);
+        gap: rem(30);
+    }
+
+    &__menu {
+        flex-grow: 1;
+        ul {
+            display: flex;
+            gap: rem(30.8);
+        }
+
+        a {
+            line-height: 1.5rem;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+    }
+
+    &__buttons {
+        position: relative;
+        display: flex;
+        gap: rem(19);
+
+        button {
+            &:hover, &.active {
+                color: $blue;
+            }
+        }
+
+        .search-input {
+            width: 0;
+            position: absolute;
+            z-index: 2;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 100%;
+            height: rem(28);
+            margin-right: rem(15);
+            font-weight: 500;
+            background: #FFF;
+            transition: all .3s;
+            &.active {
+                padding: 0 .75rem;
+                width: rem(220);
+                border: 1px solid #d3d3d4;
+            }
+            &:focus {
+                border-color: $blue;
+            }
+        }
+        .language {
+            visibility: hidden;
+            opacity: 0;
+            position: absolute;
+            padding: 1rem;
+            z-index: 2;
+            top: 100%;
+            right: 0;
+            margin-top: 1rem;
+            box-shadow: 0 rem(4) rem(14) 1px #ede8e8;
+            border-radius: 1rem;
+            background-color: $white;
+            transition: all .3s;
+            &.active {
+                visibility: visible;
+                opacity: 1;
+            }
+            ul {
+                display: flex;
+                border: 1px solid rgba(1, 4, 9, .15);
+                border-radius: .5rem;
+                overflow: hidden;
+            }
+            li:not(:last-child) {
+                border-right: 1px solid rgba(1, 4, 9, .15);
+            }
+            a {
+                display: block;
+                padding: rem(11) rem(15);
+                &.active {
+                    color: $gray-500;
+                    background-color: #f2f4f7;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $device) {
+    .header {
+        &-bottom {
+            &__menu ul {
+                justify-content: space-between;
+                gap: 0;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .header {
+        &-top {
+            &__title {
+                font-size: 1rem;
+            }
+
+            &__buttons {
+                button {
+                    min-width: rem(120);
+                }
+            }
+        }
+        &-bottom__menu a {
+            font-size: rem(11);
+        }
+    }
+}
+
+@media (max-width: $mobile) {
+    .header {
+        &-top {
+            display: none;
+            &__logo {
+                width: rem(90);
+                height: rem(30);
+            }
+        }
+        &-bottom {
+            position: relative;
+            .header-bottom__menu {
+                display: none;
+            }
+            &__inner {
+                padding: rem(6) 0;
+            }
+            &__menu {
+                ul {
+                    flex-direction: column;
+                    gap: 0;
+                }
+                a {
+                    display: block;
+                    padding: 1rem 0;
+                    font-size: rem(18);
+                    line-height: rem(27);
+                }
+            }
+            &__buttons {
+                position: static;
+                .search-input {
+                    top: 100%;
+                    transform: none;
+                    margin-top: 0;
+                    right: 0;
+                    height: rem(44);
+                    &.active {
+                        width: calc(100% - 2.5rem);
+                    }
+                }
+                .language {
+                    right: .75rem;
+                    margin-top: .75rem;
+                }
+            }
+        }
+    }
+}

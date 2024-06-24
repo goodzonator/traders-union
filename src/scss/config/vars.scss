@@ -11,12 +11,35 @@ $dm: 1700px;
 $dl: 1900px;
 
 // font
-$font-family: Arial, sans-serif;
-$font-size: 14px;
-$line-height: 20px;
+$font-family: "Open Sans", sans-serif;
+$font-size: .875rem;
+$line-height: 19px;
 $font-weight: 400;
 
 
 // colors
-$black: #000;
+
+$dark: #000;
+$dark-light: rgba(0,0,0, .7);
+
+$gray-600: #404040;
+$gray-500: #4F4F4F; //#494B49, rgba(143, 135, 131, 0.48), #8F87837A
+$gray-400: #455A64;
+$gray-300: #D3D3D4; // #E1E1E1, #DFDFE0
+$gray-200: #F0F1F2;
+$gray-100: #F9F9F9;
+
+
+$green: #539100;
+$light-green: #71B219;
+$bg-light-green: rgba(83, 145, 0, 0.07);
+
 $white: #fff;
+
+$blue: #1873EB;
+
+$red: #CC5249;
+
+$orange: #FCA16E;
+
+$purple: #9C4FFF;
