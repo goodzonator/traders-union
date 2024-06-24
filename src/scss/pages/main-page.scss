@@ -293,8 +293,8 @@
 
     &__form {
         padding: rem(15);
-        background-color: #F0F1F2;
-        border: 1px solid #D3D3D4;
+        background-color: $gray-200;
+        border: 1px solid $gray-300;
         border-radius: rem(6);
     }
 
@@ -314,7 +314,7 @@
     &__swap, &__form-input, &__form-select {
         height: rem(44);
         background-color: $white;
-        border: 1px solid #D3D3D4;
+        border: 1px solid $gray-300;
     }
 
     &__form-input {
@@ -329,7 +329,7 @@
         flex-shrink: 0;
         padding: 0 rem(15) 0 1rem;
         font-weight: 600;
-        color: #4F4F4F;
+        color: $gray-500;
         appearance: none;
         border-left: none;
         border-radius: 0 .25rem .25rem 0;
@@ -351,7 +351,7 @@
             text-align: center;
             font-weight: 600;
             background: $white;
-            border-color: #D3D3D4;
+            border-color: $gray-300;
             border-left: none;
             border-radius: 0 .25rem .25rem 0;
         }
@@ -375,7 +375,7 @@
         justify-content: center;
         align-items: center;
         flex-shrink: 0;
-        color: #455A64;
+        color: $gray-400;
         border-radius: rem(6);
         &:hover {
             color: $blue;
@@ -394,7 +394,7 @@
             justify-content: space-between;
             align-items: center;
             padding-bottom: 5.5px;
-            border-bottom: 1px solid #D3D3D4;
+            border-bottom: 1px solid $gray-300;
             margin-bottom: rem(10);
         }
 
@@ -502,7 +502,7 @@
         }
 
         &:nth-child(2) .title {
-            color: #CC5249;
+            color: $red;
             background: rgba(204, 82, 73, 0.07);
         }
 
@@ -542,7 +542,7 @@
         padding-top: rem(6);
         padding-bottom: rem(5);
         line-height: rem(30);
-        background-color: #F0F1F2;
+        background-color: $gray-200;
     }
 }
 
@@ -563,7 +563,7 @@
         font-weight: 600;
         font-size: 1rem;
         line-height: rem(25);
-        color: #1873EB;
+        color: $blue;
         background-color: rgba(44, 100, 235, 0.05);
         border-radius: rem(10);
 
@@ -636,7 +636,7 @@
             font-size: rem(25);
             font-weight: bold;
             line-height: rem(35);
-            color: #71B219;
+            color: $light-green;
         }
 
         .text {
@@ -680,7 +680,7 @@
             font-size: .75rem;
             line-height: 1.5rem;
             font-weight: 600;
-            color: #4F4F4F;
+            color: $gray-500;
             border-bottom: rem(3) solid transparent;
 
             &.active, &:hover {
@@ -763,7 +763,7 @@
 
             &:hover {
                 color: $blue;
-                background-color: #f9f9f9;
+                background-color: $gray-100;
             }
         }
     }
@@ -779,7 +779,7 @@
             padding: rem(10) rem(15);
 
             &:nth-child(odd) {
-                background-color: #F9F9F9;
+                background-color: $gray-100;
             }
         }
 
@@ -986,9 +986,9 @@
             line-height: 1.5rem;
             font-weight: 600;
             text-transform: uppercase;
-            color: #4F4F4F;
+            color: $gray-500;
             background-color: $white;
-            border: 1px solid #D3D3D4;
+            border: 1px solid $gray-300;
             border-radius: rem(4);
         }
 
@@ -1002,7 +1002,7 @@
                 line-height: 1.5rem;
                 font-weight: 600;
                 text-transform: uppercase;
-                color: #4F4F4F;
+                color: $gray-500;
             }
         }
     }

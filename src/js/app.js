@@ -6,6 +6,7 @@ import './mobile-menu.js';
 import './search.js';
 import './language.js';
 import './resizeTransfer.js';
+import './converter.js';
 
 /* support webp */
 import BaseHelpers from "./helpers/BaseHelpers.js";
@@ -67,15 +68,6 @@ if (window.innerWidth < 768) {
         });
     });
 }
-
-document.querySelectorAll('.converter-select-js').forEach(select => {
-    new Choices(select, {
-        searchEnabled: false,
-        itemSelectText: '',
-        shouldSort: false,
-        placeholderValue: 'Please select...',
-    });
-});
 
 /* end SELECT  */
 

@@ -8,7 +8,7 @@
     position: absolute;
     z-index: 2;
     width: rem(360);
-    background-color: #fff;
+    background-color: $white;
     transform: translateX(-100%);
     transition: .6s;
     &-wrap {
