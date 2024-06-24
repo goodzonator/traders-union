@@ -68,6 +68,15 @@ if (window.innerWidth < 768) {
     });
 }
 
+document.querySelectorAll('.converter-select-js').forEach(select => {
+    new Choices(select, {
+        searchEnabled: false,
+        itemSelectText: '',
+        shouldSort: false,
+        placeholderValue: 'Please select...',
+    });
+});
+
 /* end SELECT  */
 
 
