@@ -25,6 +25,7 @@ function swapValues() {
     choicesInstances.forEach(choices => choices.destroy());
 
     // Меняем значения select
+    selects[0].value = select2Value;
     selects[1].value = select1Value;
 
     choicesInstances[0] = new Choices(selects[0], {
