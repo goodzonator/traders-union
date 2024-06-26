@@ -17,12 +17,18 @@
 
     &__value {
         margin-bottom: 0;
+        font-size: 2.25rem;
+        line-height: 3.0625rem;
+        font-weight: 700;
     }
 
     &__value-percent {
         display: flex;
         align-items: center;
         letter-spacing: .3px;
+        font-size: 1.3125rem;
+        line-height: 1.75rem;
+        font-weight: 700;
         color: $green;
     }
 
